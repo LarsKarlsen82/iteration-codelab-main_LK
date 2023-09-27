@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/medium2.js"defer></script>
+
+    <style>
+        /* CSS for the animal grid */
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.animal {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.animal:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+    </style>
+</head>
+<body>
+    <section class="assignmentArea">
+        <header class="medium"></header>
+        <article>
+            <h2>Opgave 2</h2>
+            <p>
+                Den enest loop metode du må bruge i denne opgave er for...each loop!
+            </p>
+            <h3>Instruktioner</h3>
+
+            <ol>
+                <li>
+                    brug hjælpefunktionen getData() til at hente data.
+                </li>
+                <li>
+                    udskriv name og shortDescription for hvert data objekt du har modtaget.
+                </li>
+                <li>
+                    hvis du kan DOM kode:<br>
+                    vis hvert dyr med navn og billede i elementet med id "opgave2".
+                </li>
+            </ol>
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+                <div id="animalGrid" class="animal-grid"></div>
+                    <pre><code>
+                          copy og paste fra galleri kode :)
+            </code></pre>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
+
